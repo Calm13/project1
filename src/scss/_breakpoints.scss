@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1224px) {
+  body .container {
+    max-width: 1200px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container .header .navigation {
+    padding: 0;
+  }
+  .content-wrapper .main {
+    flex: initial;
+    padding: 0;
+  }
+  .container-mw-940 .content-wrapper {
+    flex-flow: row wrap;
+    [type="number"] {
+      width: 46%;
+    }
+    .group-type-car .price-block input[type="number"] + input[type="number"] {
+      width: 46%;
+    }
+    .group-type-car
+      .days-on-market-block
+      input[type="number"]
+      + input[type="number"] {
+      width: 46%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .header {
+    flex-direction: column;
+    .panel {
+      margin-left: 0;
+    }
+  }
+  body .container-mw-940 .content-wrapper {
+    [type="number"] {
+      width: 35%;
+    }
+    .group-type-car .price-block input[type="number"] + input[type="number"] {
+      width: 35%;
+    }
+    .group-type-car
+      .days-on-market-block
+      input[type="number"]
+      + input[type="number"] {
+      width: 35%;
+    }
+    .products-list .products-item .product-characteristics {
+      padding-right: 0px;
+    }
+    .products-list .products-item .products-image {
+      flex: 1;
+    }
+  }
+  .container .footer {
+    align-items: center;
+    flex-direction: column;
+    .footer-logo-about-store {
+      margin-bottom: 10px;
+      align-items: initial;
+    }
+    .footer-navigation {
+      padding-left: 160px;
+      margin-bottom: 20px;
+    }
+    .footer-navigation ul li {
+      margin-right: 80px;
+    }
+    .link-social {
+      margin-left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 498px) {
+  .special {
+    padding-left: initial;
+  }
+  body .container .footer .footer-navigation {
+    flex-direction: column;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 0;
+      }
+    }
+  }
+}

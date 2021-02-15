@@ -1,0 +1,29 @@
+@import "_mixins";
+@import "_fonts";
+@import "_vendor";
+@import "_vars";
+@import "_header";
+@import "_content";
+@import "_footer";
+@import "_breakpoints";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 0;
+}
+.container-mw-940 {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a class="" href="#">LOGO</a>
+            </div>
+            <ul class="navigation">
+                <li class="parent">Blog</li>
+                <li class="parent">Contact</li>
+                <li class="parent">Help</li>
+                <li class="parent">Dealer</li>
+                <li class="parent">Carrier</li>
+            </ul>
+            <div class="panel">
+                <a class="authorization" href="#">Sign In</a>
+                <a id="lang" href="#"></a>
+            </div>
+        </header>
+        <div class="container-mw-940">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="content-wrapper">
+                <aside class="aside">
+                    <div class="group-type-car">
+                        <div class="btn-wrapper">
+                            <a data-filter="all" href="#" class="link-filter">All</a>
+                            <a data-filter="used" href="#" class="link-filter">Used</a>
+                            <a data-filter="classics" href="#" class="link-filter">Classics</a>
+                            <a data-filter="new" href="#" class="link-filter">New</a>
+                        </div>
+                        <div class="vehicle-block">
+                            <label for="vehicle">Vehicle type</label>
+                            <select id="vehicle">
+                                <option>All</option>
+                                <option>SEDAN</option>
+                                <option>COUPE</option>
+                                <option>SPORTS CAR</option>
+                                <option>MINIVAN</option>
+                                <option>STATION WAGON</option>
+                            </select>
+                        </div>
+                        <div class="manufacturer-block">
+                            <label for="manufacturer">Manufacturer</label>
+                            <input type="search" id="manufacturer" placeholder="enter text">
+                        </div>
+                        <div class="model-block">
+                            <label for="model">Model</label>
+                            <select id="model">
+                                <option>All</option>
+                                <option>Road</option>
+                                <option>Avant</option>
+                                <option>A4</option>
+                                <option>Q8</option>
+                                <option>A4 allroad quattro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="group-type-car ymp">
+                        <div class="year-block">
+                            <label for="year-from">Year</label>
+                            
+                            <input type="number" placeholder="from" id="year-from"> 
+                            <input type="number" placeholder="to" id="year-to">
+                        </div>
+                        <div class="milleage-block">
+                            <label for="">Milleage <span>(miles)</span></label>
+                            <input type="number" placeholder="from" id="milleage-from">
+                            <input type="number" placeholder="to" id="milleage-to">
+                            
+                        </div>
+                        <div class="price-block">
+                            <label for="">Price <span>($)</span></label>
+                            <input type="number" placeholder="from" id="price-from">
+                            <input type="number" placeholder="to" id="price-to">
+                           
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>Transmission</h2>
+                        <div>
+                            <input type="checkbox" id="manual-gearbox" name="scales">
+                            <label for="manual-gearbox">Manual gearbox</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="semi-transmission" name="scales">
+                            <label for="semi-transmission">Semi-automatic</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="automatic-transmission" name="scales">
+                            <label for="automatic-transmission">Automatic transmission</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car">
+                        <div class="days-on-market-block">
+                            <label for="days-from">Days on Market</label>
+                            <input type="number" placeholder="from" id="days-from">
+                            <input type="number" placeholder="to" id="days-to">
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>Drivertrain</h2>
+                        <div>
+                            <input type="checkbox" id="all-drive" name="scales">
+                            <label for="all-drive">All Wheel Drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="frond-drive" name="scales">
+                            <label for="frond-drive">Frond-Wheel Drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="real-drive" name="scales">
+                            <label for="real-drive">Real-Wheel Drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="unknown0" name="scales">
+                            <label for="unknown0">Unknown</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>Fuel Type</h2>
+                        <div>
+                            <input type="checkbox" id="gasoline" name="scales">
+                            <label for="gasoline">Gasoline</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="hybrid" name="scales">
+                            <label for="hybrid">Hybrid</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="diesel" name="scales">
+                            <label for="diesel">Diesel</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gas" name="scales">
+                            <label for="gas">Gas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="unknown1" name="scales">
+                            <label for="unknown1">Unknown</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>New / Used / CPO</h2>
+                        <div>
+                            <input type="checkbox" id="pre-ower" name="scales">
+                            <label for="pre-ower">Certified Pre-Owner</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="used" name="scales">
+                            <label for="used">Used</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>Seating Capacity</h2>
+                        <div>
+                            <input type="checkbox" id="numb2" name="scales">
+                            <label for="numb2">2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="numb4" name="scales">
+                            <label for="numb4">4</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="numb5" name="scales">
+                            <label for="numb5">5</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="numb7" name="scales">
+                            <label for="numb7">7</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="unknown" name="scales">
+                            <label for="unknown">Unknown</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <h2>Seller  Type</h2>
+                        <div>
+                            <input type="checkbox" id="seller" name="scales">
+                            <label for="seller">Seller</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="private" name="scales">
+                            <label for="private">Private</label>
+                        </div>
+                    </div>
+                    <div class="group-type-car n-block">
+                        <div>
+                            <input type="checkbox" id="hide-vehicle" name="scales">
+                            <label for="hide-vehicle">Hide vehicle without photos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="show-price" name="scales">
+                            <label for="show-price">Only show recent price drops</label>
+                        </div>
+                    </div>
+                </aside>
+                <main class="main">
+                    <div class="special">
+                        <div class="top">
+                            <a href="#" class="save-search">Save Search</a>
+                            <a href="#" class="quantity-search"></a>
+                            <span> Ads matching your search criteria</span>
+                        </div>
+                        <div class="center">
+                            <a href="#" class="selected-values">Used</a>
+                        </div>
+                        <div class="bottom">
+                            <span>Sort by:<a href="#" class="price-popup"> Price Ascending</a></span>
+                        </div>
+                    </div>
+                    <main id="page">
+                        <div class="products-list">
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="products-item classics list-group">
+                                <a href="javascript:void(0)"></a>
+                                <div class="products-image">
+                                    <img src="img/bitmap.png" alt="">
+                                </div>
+                                <div class="products-body">
+                                    <p class="product-name"><span class="product-manufacturer">Audi</span><span class="product-model"> A6</span><span class="product-vehicle-type"> Avant</span><span class="product-years"> 2012</span></p>
+                                    <span class="product-price">$ 28,500</span>
+                                    <div class="product-characteristics">
+                                        <span class="years">
+                                            2021
+                                        </span>
+                                        <span class="mileage">
+                                            200,000 Mi
+                                        </span>
+                                        <span class="fuel">
+                                            Diesel
+                                        </span>
+                                        <span class="transmission">
+                                            Automatik
+                                        </span>
+                                    </div>
+                                    <p class="product-text">
+                                        ca. 6,7 l/100km (komb), ca. 179 g CO<sub>2</sub>/km(komb) Ez 06/2009, 200.000&nbsp;km, 176kW(239 PS) Kombi,Diesel,Automatik
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                        
+                        <nav aria-label=...>
+                            <ul class="pagination">
+                              <li id="previous-page"><a href="javascript:void(0)" aria-label=Previous><span aria-hidden=true> Prev</span></a></li>
+                            </ul>
+                        </nav>
+                    
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-logo-about-store">
+                <div class="logo">
+                    <a href="#">LOGO</a>
+                </div>
+                <p>The marketplace for USU Cars.American Cars Muscle Cars and Oldtimer from the.United States.</p>
+            </div>
+            <ul class="footer-navigation">
+                    <ul>
+                        <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Help</li>
+                    </ul>
+                    <ul>
+                        <li>Dealer</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                    </ul>
+                    <ul>
+                        <li>Advertising</li>
+                    <li>Press</li>
+                    <li>Carrier</li>
+                    </ul>
+            </ul>
+            <div class="link-social">
+                <a class="instagram" href="#"><img src="../src/img/instagram - FontAwesome.svg" alt=""></a>
+                <a class="facebook" href="#"><img src="../src/img/facebook-square - FontAwesome.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/jquery@3.2.1/dist/jquery.min.js"></script>
+</body>
+</html>

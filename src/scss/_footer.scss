@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  padding: 18px 18px;
+  align-items: flex-start;
+  background-color: $bg-footer-header;
+  font-family: $header-footer-family;
+}
+.footer-logo-about-store {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  .logo {
+    text-align: center;
+    background: $var1;
+    a {
+      padding: 10px 10px;
+      font-size: 34px;
+      line-height: 46px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  p {
+    color: #999;
+    max-width: 224px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-family: $main-font-family;
+  }
+}
+.footer-navigation {
+  padding-left: 70px;
+  padding-top: 5px;
+  display: flex;
+  ul {
+    li {
+      color: $var1;
+      padding-bottom: 20px;
+      padding-right: 25px;
+      margin-right: 120px;
+      font-size: 14px;
+      line-height: 19px;
+      cursor: pointer;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
+.link-social {
+  margin-left: auto;
+  display: flex;
+  a + a {
+    margin-left: 30px;
+  }
+}
